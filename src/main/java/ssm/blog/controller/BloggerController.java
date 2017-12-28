@@ -6,4 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping(value = "/blog")
 public class BloggerController {
+    public String hello() {
+        return "hello";
+    }
 }
