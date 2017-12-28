@@ -16,11 +16,11 @@ import javax.annotation.Resource;
 public class BloggerDaoTest {
 
     @Resource   //注入BloggerDao对象
-    private BloggerService bloggerService;
+    private BloggerDao bloggerDao;
 
     @Test
     public void getBloggerData() throws Exception {
-        Blogger blogger = bloggerService.getBloggerData();
+        Blogger blogger = bloggerDao.getBloggerData();
         System.out.println(blogger);
     }
 
